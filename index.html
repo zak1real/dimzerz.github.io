@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimzerz — скейт-оператор и филмер</title>
+  <meta name="description" content="Dimzerz (Дмитрий Забозлаев) — скейт-оператор, филмер и режиссёр независимых скейт-видео.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Меню -->
+  <header class="header" id="header">
+    <!-- Сетка из трёх колонок: меню | логотип по центру | соцсети -->
+    <div class="header__inner">
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#video">Видео</a>
+        <a class="nav__link" href="#photo">Фото</a>
+        <a class="nav__link nav__link--donate" href="#donate">Donate</a>
+      </nav>
+
+      <a class="header__logo" href="#about">DIMZERZ</a>
+
+      <div class="socials">
+        <a class="socials__link" href="https://www.instagram.com/dimzerz/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 100 100" width="24" height="24" fill="currentColor" aria-hidden="true">
+            <path d="M66.96 10H33.04C20.32 10 10 20.32 10 32.96v34.16C10 79.68 20.32 90 33.04 90h33.92C79.68 90 90 79.68 90 67.04V32.96C90 20.32 79.68 10 66.96 10ZM29.2 50c0-11.49 9.33-20.8 20.8-20.8S70.8 38.51 70.8 50 61.47 70.8 50 70.8 29.2 61.5 29.2 50Zm43.69-18.8a4.8 4.8 0 1 1 0-9.6 4.8 4.8 0 0 1 0 9.6Z"/>
+            <path d="M50 36.4a13.6 13.6 0 1 0 0 27.2 13.6 13.6 0 0 0 0-27.2Z"/>
+          </svg>
+        </a>
+        <a class="socials__link" href="https://www.youtube.com/@Dimzerz/videos" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 100 100" width="24" height="24" fill="currentColor" aria-hidden="true">
+            <path d="M90.95 31.87c-.8-6.29-4.43-10.24-10.88-10.82C72.69 20.38 56.7 20 49.29 20c-15.17 0-21.94.37-29.11 1.11-6.84.71-9.83 3.75-11.01 10.02C8.35 35.52 8 39.63 8 49.36c0 8.73.41 14.23 1.05 18.85.88 6.35 5.24 9.92 11.62 10.45 7.43.62 22.31.93 29.67.93 7.11 0 23.11-.37 30.22-1.17 6.37-.72 9.4-4.12 10.39-10.39 0 0 1.05-6.86 1.05-18.73 0-6.76-.49-13.04-1.05-17.43ZM41.07 61.6V37.45l22.99 11.95L41.07 61.6Z"/>
+          </svg>
+        </a>
+        <!-- Иконка SoundCloud из Simple Icons (CC0). Она плоская по высоте, поэтому чуть крупнее соседних — чтобы визуально совпадала -->
+        <a class="socials__link" href="https://soundcloud.com/jeemvn" target="_blank" rel="noopener" aria-label="SoundCloud">
+          <svg viewBox="0 3 24 18" width="28" height="21" fill="currentColor" aria-hidden="true">
+            <path d="M23.999 14.165c-.052 1.796-1.612 3.169-3.4 3.169h-8.18a.68.68 0 0 1-.675-.683V7.862a.747.747 0 0 1 .452-.724s.75-.513 2.333-.513a5.364 5.364 0 0 1 2.763.755 5.433 5.433 0 0 1 2.57 3.54c.282-.08.574-.121.868-.12.884 0 1.73.358 2.347.992s.948 1.49.922 2.373ZM10.721 8.421c.247 2.98.427 5.697 0 8.672a.264.264 0 0 1-.53 0c-.395-2.946-.22-5.718 0-8.672a.264.264 0 0 1 .53 0ZM9.072 9.448c.285 2.659.37 4.986-.006 7.655a.277.277 0 0 1-.55 0c-.331-2.63-.256-5.02 0-7.655a.277.277 0 0 1 .556 0Zm-1.663-.257c.27 2.726.39 5.171 0 7.904a.266.266 0 0 1-.532 0c-.38-2.69-.257-5.21 0-7.904a.266.266 0 0 1 .532 0Zm-1.647.77a26.108 26.108 0 0 1-.008 7.147.272.272 0 0 1-.542 0 27.955 27.955 0 0 1 0-7.147.275.275 0 0 1 .55 0Zm-1.67 1.769c.421 1.865.228 3.5-.029 5.388a.257.257 0 0 1-.514 0c-.21-1.858-.398-3.549 0-5.389a.272.272 0 0 1 .543 0Zm-1.655-.273c.388 1.897.26 3.508-.01 5.412-.026.28-.514.283-.54 0-.244-1.878-.347-3.54-.01-5.412a.283.283 0 0 1 .56 0Zm-1.668.911c.4 1.268.257 2.292-.026 3.572a.257.257 0 0 1-.514 0c-.241-1.262-.354-2.312-.023-3.572a.283.283 0 0 1 .563 0Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Обложка с видео на фоне -->
+    <section class="hero" id="about">
+      <!-- Фон: локальное видео по кругу, без звука. poster — картинка, пока видео грузится -->
+      <video class="hero__video" id="hero-video" autoplay muted loop playsinline preload="auto"
+        poster="images/photo-1.jpg" aria-hidden="true" tabindex="-1">
+        <source src="movie/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content container">
+        <h1 class="hero__title">Dimzerz<span>скейт-оператор и филмер</span></h1>
+
+        <div class="hero__descr">
+          <p><strong>Полное имя:</strong> Дмитрий Забозлаев</p>
+          <p><strong>Специализация:</strong> скейт-филминг, уличная съёмка, видеомонтаж, режиссура независимых скейт-видео.</p>
+          <p>
+            Дима Забозлаев, более известный в индустрии под ником
+            <a href="https://www.instagram.com/dimzerz/" target="_blank" rel="noopener"><strong>Dimzerz</strong></a>, —
+            один из ярких представителей российской волны скейт-операторов. Его работы выделяются чистой уличной
+            эстетикой (стрит-сессии), динамичной склейкой кадров, качественной работой с широкоугольными объективами
+            (фишай) и атмосферным музыкальным сопровождением. Дима фиксирует не просто трюки, а саму культуру, стиль
+            и локальный вайб скейт-сообщества.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Главные проекты -->
+    <section class="section projects">
+      <div class="container projects__grid">
+        <div class="projects__text">
+          <h2 class="section__title">Главные видеопроекты и релизы</h2>
+          <ul class="projects__list">
+            <li><strong>«Зачем Тебе Видео, в Котором Меня Нет»</strong> — флагманский независимый скейт-фильм. Успешно презентован на локальных ивентах и спотах, включая масштабный показ в Уфе.</li>
+            <li><strong>Профайлы райдеров</strong> — серия короткометражных видео. Раскрывают уникальный стиль и технику уличных райдеров.</li>
+            <li><strong>Стрит-эдиты и бэкстейджи</strong> — регулярные отчёты со спотов (например, проект «Фантом»). Живые кадры: подготовка трюков, падения и закадровая жизнь тусовки.</li>
+          </ul>
+        </div>
+
+        <figure class="projects__video">
+          <div class="video-frame" data-video-id="2S4sJDA_u64" data-video-title="Зачем Тебе Целое Видео, В Котором Меня Нет?"></div>
+          <figcaption>
+            <strong>Зачем Тебе Целое Видео, В Котором Меня Нет?</strong>
+            <span>You Don't Need A Vid Without Me In It</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Плейлист -->
+    <section class="section playlist" id="video">
+      <div class="container">
+        <h2 class="section__title">Видео</h2>
+
+        <div class="playlist__grid">
+          <div class="playlist__player">
+            <div class="video-frame" id="playlist-frame"></div>
+            <h3 class="playlist__title" id="playlist-title"></h3>
+            <p class="playlist__descr" id="playlist-descr"></p>
+          </div>
+
+          <aside class="playlist__side">
+            <div class="playlist__head">
+              <div class="playlist__head-title">Плейлист</div>
+              <div class="playlist__count" id="playlist-count"></div>
+            </div>
+            <ol class="playlist__items" id="playlist-items"></ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Фото -->
+    <section class="section gallery" id="photo">
+      <div class="container">
+        <h2 class="section__title">Фото</h2>
+
+        <div class="slider" id="slider">
+          <div class="slider__track" id="slider-track">
+            <img class="slider__img" src="images/photo-1.jpg" alt="Фото со съёмок 1" loading="lazy">
+            <img class="slider__img" src="images/photo-2.jpg" alt="Фото со съёмок 2" loading="lazy">
+            <img class="slider__img" src="images/photo-3.jpg" alt="Фото со съёмок 3" loading="lazy">
+          </div>
+          <button class="slider__arrow slider__arrow--prev" id="slider-prev" type="button" aria-label="Предыдущее фото">‹</button>
+          <button class="slider__arrow slider__arrow--next" id="slider-next" type="button" aria-label="Следующее фото">›</button>
+        </div>
+        <div class="slider__dots" id="slider-dots"></div>
+      </div>
+    </section>
+
+    <!-- Донат: ссылки задаются в script.js (объект DONATE) -->
+    <section class="section donate" id="donate">
+      <div class="container">
+        <div class="donate__card">
+          <h2 class="section__title">Поддержать Dimzerz</h2>
+          <p class="donate__text">
+            Если тебе заходят видео — можно поддержать новые съёмки: технику, плёнку и поездки на споты.
+            Любая сумма помогает выпускать больше эдитов.
+          </p>
+
+          <p class="donate__hint" id="donate-hint"></p>
+          <div class="donate__links" id="donate-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>Dimzerz Archive: в процессе наполнения.</strong> Скоро здесь появятся полная дискография видео, технический сетап и история съёмок. На подходе!</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Вернуться к началу страницы">
+    <svg viewBox="0 0 50 50" width="24" height="24" aria-hidden="true"><path d="M14 28L25 18l10 10" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
