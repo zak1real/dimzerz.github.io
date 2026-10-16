@@ -31,3 +31,5 @@
 ## Запуск
 
 Чтобы видео играли на странице, запустите локальный сервер: Live Server в VS Code или `npx serve .` в папке сайта.
+https://zak1real.github.io/dimzerz/
+
