@@ -2,7 +2,7 @@
 
 Статичный сайт (HTML + CSS + JS без сборки), перенесённый со страницы Tilda.
 
-https://dimzerz.github.io/
+[https://dimzerz.github.io/](https://zak1real.github.io/dimzerz.github.io/)
 
 ## Структура
 
