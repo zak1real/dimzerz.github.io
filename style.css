@@ -421,7 +421,7 @@ img { max-width: 100%; display: block; }
   padding: 50px 30px;
   border: 1px solid #2a2a2e;
   border-radius: 16px;
-  background: var(--bg-2);
+  background: #a03788;
   text-align: center;
 }
 
@@ -438,11 +438,12 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   padding: 14px 40px;
   border-radius: 30px;
-  background: #3a3a3f;
+  background: #0000004d;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
   transition: opacity .2s, transform .2s;
+  border: 1px solid #ffffff;
 }
 
 .donate__button:hover { transform: translateY(-2px); }
