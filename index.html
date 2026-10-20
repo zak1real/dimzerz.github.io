@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dimzerz — скейт-оператор и филмер</title>
+  <title>Dimzerz — скейт-оператор</title>
   <meta name="description" content="Dimzerz (Дмитрий Забозлаев) — скейт-оператор, филмер и режиссёр независимых скейт-видео.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
       </button>
 
       <nav class="nav" id="nav">
-        <a class="nav__link" href="#about">О нас</a>
-        <a class="nav__link" href="#video">Видео</a>
-        <a class="nav__link" href="#photo">Фото</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#video">Video</a>
+        <!-- <a class="nav__link" href="#setup">Setup</a> -->
         <a class="nav__link nav__link--donate" href="#donate">Donate</a>
       </nav>
 
@@ -62,18 +62,16 @@
       <div class="hero__overlay"></div>
 
       <div class="hero__content container">
-        <h1 class="hero__title">Dimzerz<span>скейт-оператор и филмер</span></h1>
+        <h1 class="hero__title">Dimzerz<span>скейт-оператор</span></h1>
 
         <div class="hero__descr">
           <p><strong>Полное имя:</strong> Дмитрий Забозлаев</p>
-          <p><strong>Специализация:</strong> скейт-филминг, уличная съёмка, видеомонтаж, режиссура независимых скейт-видео.</p>
+          <p><strong>Специализация:</strong> скейт-филминг, видеомонтаж, режиссура независимых скейт-видео.</p>
           <p>
-            Дима Забозлаев, более известный в индустрии под ником
+            Димитрий Забозлаев, он же 
             <a href="https://www.instagram.com/dimzerz/" target="_blank" rel="noopener"><strong>Dimzerz</strong></a>, —
-            один из ярких представителей российской волны скейт-операторов. Его работы выделяются чистой уличной
-            эстетикой (стрит-сессии), динамичной склейкой кадров, качественной работой с широкоугольными объективами
-            (фишай) и атмосферным музыкальным сопровождением. Дима фиксирует не просто трюки, а саму культуру, стиль
-            и локальный вайб скейт-сообщества.
+            Снимает скейт на камеру VX1000 с фишаем — стрит, споты, друзья, и вообще всё катание в течение дня. Иногда собирает это в полноценные видео,так называемые full sv! 
+            <br>Камера старая, но картинка у неё та самая, как в классических скейт-видео.
           </p>
         </div>
       </div>
@@ -124,25 +122,27 @@
       </div>
     </section>
 
-    <!-- Фото -->
-    <section class="section gallery" id="photo">
+    <!-- Сетап: заголовок сверху, под ним карточки «фото + название» в ряд -->
+    <section class="section setup" id="setup">
       <div class="container">
-        <h2 class="section__title">Фото</h2>
+        <h2 class="section__title">Классический сетап Dimzerz</h2>
+        <!-- Описание (скрыто). Чтобы вернуть — уберите комментарий:
+        <p class="setup__descr">
+          Камера Sony VX1000 и фишай-адаптеры Century — тот самый сетап, на который снимали
+          классические скейт-видео 90-х и 2000-х. С ним Dimzerz и выходит на споты.
+        </p>
+        -->
 
-        <div class="slider" id="slider">
-          <div class="slider__track" id="slider-track">
-            <img class="slider__img" src="images/photo-1.jpg" alt="Фото со съёмок 1" loading="lazy">
-            <img class="slider__img" src="images/photo-2.jpg" alt="Фото со съёмок 2" loading="lazy">
-            <img class="slider__img" src="images/photo-3.jpg" alt="Фото со съёмок 3" loading="lazy">
-          </div>
-          <button class="slider__arrow slider__arrow--prev" id="slider-prev" type="button" aria-label="Предыдущее фото">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
-          </button>
-          <button class="slider__arrow slider__arrow--next" id="slider-next" type="button" aria-label="Следующее фото">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
-          </button>
+        <div class="setup__cards">
+          <figure class="setup__card">
+            <img src="images/vx1000.jpg" alt="Две камеры Sony DCR-VX1000 сбоку" width="1200" height="1600" loading="lazy">
+            <figcaption class="setup__name">Sony DCR-VX1000</figcaption>
+          </figure>
+          <figure class="setup__card">
+            <img src="images/vx1000-fisheye.jpg" alt="Две камеры Sony VX1000 с фишай-адаптерами Century на траве" width="1200" height="1600" loading="lazy">
+            <figcaption class="setup__name">Fisheye Century Optics Mk1 + <br>HVR-MRC1</br></figcaption>
+          </figure>
         </div>
-        <div class="slider__dots" id="slider-dots"></div>
       </div>
     </section>
 
@@ -152,8 +152,8 @@
         <div class="donate__card">
           <h2 class="section__title">Поддержать Dimzerz</h2>
           <p class="donate__text">
-            Если тебе заходят видео — можно поддержать новые съёмки: технику, плёнку и поездки на споты.
-            Любая сумма помогает выпускать больше эдитов.
+            Если тебе заходят видео — можно поддержать новые съёмки: технику, плёнку и поездки.
+            <br>Любая сумма помогает выпускать больше видео.
           </p>
 
           <p class="donate__hint" id="donate-hint"></p>
@@ -165,7 +165,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p><strong>Dimzerz Archive: в процессе наполнения.</strong> Скоро здесь появятся полная дискография видео, технический сетап и история съёмок. На подходе!</p>
+      <p><strong>Dimzerz Archive: в процессе наполнения.</strong></p>
     </div>
   </footer>
 

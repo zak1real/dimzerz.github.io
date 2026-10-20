@@ -85,7 +85,7 @@ const videos = [
     id: 'PoqnoluuWdM',
     title: '«TROICA: TIMELESS LOVE»',
     time: '13:45',
-    descr: '«TROICA: TIMELESS LOVE» — это тринадцатиминутный манифест уличной скейт-культуры, который выводит фирменный стиль Dimzerz на новый уровень. Название «Вневременная любовь» идеально отражает суть видео: это искренняя, ничем не поддельная преданность стрит-катанию, вопреки капризам погоды, жёсткому асфальту и разрушающимся спотам.',
+    descr: '«TROICA: TIMELESS LOVE» — 13 минут стрита. Снимали всё лето, в дождь и на разбитых спотах',
   },
   {
     id: 'OU9RhR2C1Us',
@@ -163,39 +163,3 @@ activeLinks.forEach(({ label, url }) => {
   a.textContent = label;
   donateLinks.append(a);
 });
-
-// ---------- Слайдер фото ----------
-const track = document.getElementById('slider-track');
-const slides = track.children;
-const dotsEl = document.getElementById('slider-dots');
-let current = 0;
-
-for (let i = 0; i < slides.length; i++) {
-  const dot = document.createElement('button');
-  dot.type = 'button';
-  dot.className = 'slider__dot';
-  dot.setAttribute('aria-label', `Фото ${i + 1}`);
-  dot.addEventListener('click', () => goTo(i));
-  dotsEl.append(dot);
-}
-
-function goTo(index) {
-  current = (index + slides.length) % slides.length;
-  track.style.transform = `translateX(-${current * 100}%)`;
-  [...dotsEl.children].forEach((dot, i) => dot.classList.toggle('slider__dot--active', i === current));
-}
-
-document.getElementById('slider-prev').addEventListener('click', () => goTo(current - 1));
-document.getElementById('slider-next').addEventListener('click', () => goTo(current + 1));
-
-// Свайп на телефоне
-let startX = null;
-track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
-track.addEventListener('touchend', (e) => {
-  if (startX === null) return;
-  const diff = e.changedTouches[0].clientX - startX;
-  if (Math.abs(diff) > 40) goTo(current + (diff < 0 ? 1 : -1));
-  startX = null;
-});
-
-goTo(0);
